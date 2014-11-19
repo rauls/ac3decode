@@ -26,7 +26,7 @@ Source code for BBDMUX is available from
 http://members.home.net/beyeler/
 
 
-![alt text](screen.png "Screen")
+![alt text](screen.jpg "Screen")
 
 
 #Usage
