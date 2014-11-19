@@ -1,0 +1,157 @@
+# Microsoft Developer Studio Generated Dependency File, included by ac3dec.mak
+
+.\bit_allocate.c : \
+	".\ac3.h"\
+	
+
+.\bitstream.c : \
+	".\ac3.h"\
+	".\bitstream.h"\
+	".\crc.h"\
+	".\decode.h"\
+	
+
+.\crc.c : \
+	".\ac3.h"\
+	".\crc.h"\
+	
+
+.\debug.c : \
+	".\debug.h"\
+	
+
+.\decode.c : \
+	".\ac3.h"\
+	".\bit_allocate.h"\
+	".\bitstream.h"\
+	".\crc.h"\
+	".\debug.h"\
+	".\decode.h"\
+	".\exponent.h"\
+	".\imdct.h"\
+	".\mantissa.h"\
+	".\output.h"\
+	".\parse.h"\
+	".\rematrix.h"\
+	
+
+.\dither.c : \
+	".\ac3.h"\
+	".\dither.h"\
+	
+
+.\downmix.c : \
+	".\ac3.h"\
+	".\decode.h"\
+	".\downmix.h"\
+	
+
+.\exponent.c : \
+	".\ac3.h"\
+	".\decode.h"\
+	".\exponent.h"\
+	
+
+.\imdct.c : \
+	".\ac3.h"\
+	".\decode.h"\
+	".\imdct.h"\
+	
+
+.\mantissa.c : \
+	".\ac3.h"\
+	".\bitstream.h"\
+	".\decode.h"\
+	".\dither.h"\
+	".\mantissa.h"\
+	
+
+.\parse.c : \
+	".\ac3.h"\
+	".\bitstream.h"\
+	".\debug.h"\
+	".\decode.h"\
+	".\parse.h"\
+	".\stats.h"\
+	
+
+.\rematrix.c : \
+	".\ac3.h"\
+	".\decode.h"\
+	".\rematrix.h"\
+	
+
+.\stats.c : \
+	".\ac3.h"\
+	".\debug.h"\
+	".\decode.h"\
+	".\stats.h"\
+	
+
+.\Bbdbits.cpp : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\bbdbits.h"\
+	".\demuxbuf.h"\
+	
+
+.\Bbdmux.cpp : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\bbdbits.h"\
+	
+
+.\demuxbuf.cpp : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\demuxbuf.h"\
+	
+
+.\my_fread.cpp : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\ac3.h"\
+	".\bbdmux.h"\
+	".\bitstream.h"\
+	".\demuxbuf.h"\
+	".\my_fread.h"\
+	".\parse.h"\
+	
+
+.\output_aacfile.c : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\aac\aacenc.h"\
+	".\ac3.h"\
+	".\debug.h"\
+	".\decode.h"\
+	".\downmix.h"\
+	".\eventbox.h"\
+	".\output.h"\
+	".\ring_buffer.h"\
+	
+
+.\output_wavefile.c : \
+	"..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\ac3.h"\
+	".\debug.h"\
+	".\decode.h"\
+	".\downmix.h"\
+	".\eventbox.h"\
+	".\output.h"\
+	".\ring_buffer.h"\
+	
+
+.\output_winwave.c : \
+	".\ac3.h"\
+	".\debug.h"\
+	".\decode.h"\
+	".\downmix.h"\
+	".\eventbox.h"\
+	".\output.h"\
+	".\ring_buffer.h"\
+	"d:\platform sdk\include\basetsd.h"\
+	"d:\platform sdk\include\guiddef.h"\
+	"d:\platform sdk\include\propidl.h"\
+	"d:\platform sdk\include\tvout.h"\
+	"d:\platform sdk\include\winefs.h"\
+	
+
+.\ring_buffer.c : \
+	".\ring_buffer.h"\
+	

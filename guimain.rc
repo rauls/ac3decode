@@ -1,0 +1,229 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_AC3                 ICON    DISCARDABLE     "AC3DEC.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_AC3DEC MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Convert",                     IDM_CONVERT
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_AC3DEC ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 357, 169
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "Dude, Wheres my about box.. man!"
+FONT 8, "Arial"
+BEGIN
+    ICON            IDI_AC3,IDI_SMALL,7,4,20,20
+    LTEXT           "AC3DEC Version 0.8.21",
+                    IDC_STATIC,37,9,194,8,SS_NOPREFIX
+    LTEXT           "The AC3 stream decoder and extractor.",
+                    IDC_STATIC,44,134,275,12
+    DEFPUSHBUTTON   "Yo Close This Box Dude",IDOK,119,153,106,12,WS_GROUP
+    CONTROL         131,IDI_SMALL2,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE | SS_SUNKEN,36,26,295,101
+END
+
+IDD_MAIN DIALOGEX 0, 0, 469, 247
+STYLE DS_SETFOREGROUND | DS_3DLOOK | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_ACCEPTFILES
+MENU IDC_AC3DEC
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Output Codec",IDC_CODEC,18,20,52,14
+    CONTROL         "convert to 44.1Khz",IDC_44100,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,42,172,12
+    CONTROL         "Slider1",IDC_GAIN1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,13,95,187,17
+    CONTROL         "Slider2",IDC_GAIN2,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,13,118,187,18
+    LTEXT           "Gain1",IDC_STATIC,201,98,22,13
+    LTEXT           "Gain2",IDC_STATIC,200,122,22,13
+    GROUPBOX        "Status",IDC_STATUSBAR,7,213,455,27
+    CONTROL         "Ok",IDC_STATUS,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN,
+                    14,223,399,12
+    GROUPBOX        "Settings",IDC_STATIC,7,7,218,202
+    CONTROL         "Convert to wav",IDC_MODE1,"Button",BS_AUTORADIOBUTTON,
+                    23,65,75,11
+    CONTROL         "Play realtime (listen)",IDC_MODE2,"Button",
+                    BS_AUTORADIOBUTTON,23,77,75,10
+    PUSHBUTTON      "Stop",IDC_STOP,419,222,37,13
+    GROUPBOX        "Queued files to convert (Drag n Drop some files here any time)",
+                    IDC_STATIC,230,7,232,202
+    LISTBOX         SOURCELIST,233,16,222,189,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "PCM - 48.000 Khz, 16 Bit, Stereo",IDC_CODECNAME,72,21,
+                    147,14,WS_BORDER,WS_EX_CLIENTEDGE
+    GROUPBOX        "Mode",IDC_STATIC,18,57,202,34
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 345
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 462
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "dollar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "AC3DEC"
+    IDC_AC3DEC              "AC3DEC"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
